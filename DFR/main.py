@@ -20,6 +20,7 @@ def config():
     parser.add_argument('--backbone', type=str, default="vgg19", help="backbone net")
 
     cnn_layers = ('relu4_1', 'relu4_2', 'relu4_3', 'relu4_4')
+    parser.add_argument('--n_layers', type=int, default=12, help="number of cnn feature layers")
     parser.add_argument('--cnn_layers', type=str, nargs="+", default=cnn_layers, help="cnn feature layers to use")
     parser.add_argument('--upsample', type=str, default="bilinear", help="operation for resizing cnn map")
     parser.add_argument('--is_agg', type=bool, default=True, help="if to aggregate the features")
@@ -62,12 +63,17 @@ if __name__ == "__main__":
     cfg = config()
     # cfg.save_path = "/content/DFR-Results"
     # cfg.model_name = ""
+    cfg.train_data_path = "/content/" + cfg.data_name + "/train/good"
+    cfg.test_data_path = "/content/" + cfg.data_name + "/test"
 
     # feature extractor
     # cfg.cnn_layers = ('relu4_1', 'relu4_2', 'relu4_3', 'relu4_4')
-    cfg.cnn_layers = ('relu1_1', 'relu1_2', 'relu2_1', 'relu2_2',
-                  'relu3_1', 'relu3_2', 'relu3_3', 'relu3_4',
-                  'relu4_1', 'relu4_2', 'relu4_3', 'relu4_4')
+    layers = ('relu1_1', 'relu1_2', 'relu2_1', 'relu2_2',
+              'relu3_1', 'relu3_2', 'relu3_3', 'relu3_4', 
+              'relu4_1', 'relu4_2', 'relu4_3', 'relu4_4', 
+              'relu5_1', 'relu5_2', 'relu5_3', 'relu5_4')
+              
+    cfg.cnn_layers = layers[:cfg.n_layers]
 
     # dataset
     textures = ['carpet', 'grid', 'leather', 'tile', 'wood']
