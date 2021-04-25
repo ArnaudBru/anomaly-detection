@@ -1,0 +1,2 @@
+det_pr, det_auc, seg_pr, seg_auc, seg_pro, seg_iou
+0.99878,0.99603,0.55304,0.94905,0.89576,0.39904
