@@ -55,7 +55,7 @@ def visulization_score(img_file, mask_path, score_map_path, saving_path):
     mask_file = os.path.join(mask_path, img_name)
     mask = cv2.imread(mask_file, cv2.IMREAD_GRAYSCALE)
     contours, _ = cv2.findContours(mask, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
-    cv2.drawContours(img, contours, -1, (0, 0, 255), thickness=-1)
+    cv2.drawContours(img, contours, -1, (0, 0, 255), thickness=2)
     img = img[:, :, ::-1]  # bgr to rgb
 
     # normalized score {0, 255}

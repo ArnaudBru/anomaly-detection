@@ -7,8 +7,8 @@ def config():
     parser = argparse.ArgumentParser(description="Settings of DFR")
 
     # positional args
-    parser.add_argument('--mode', type=str, choices=["train", "evaluation"],
-                        default="train", help="train or evaluation")
+    parser.add_argument('--mode', type=str, choices=["train", "evaluation", "segmentation"],
+                        default="train", help="train, evaluation, or segmentation")
 
     # general
     parser.add_argument('--model_name', type=str, default="", help="specifed model name")
@@ -91,13 +91,17 @@ if __name__ == "__main__":
             dfr = AnoSegDFR(cfg)
             if cfg.mode == "train":
                 dfr.train()
-            else:
+            elif cfg.mode == "evaluation":
                 dfr.metrics_evaluation()
-    #             dfr.metrics_detecion()
+    #             dfr.metrics_detection()
+            else:
+                dfr.segmentation_evaluation()
     else:
         dfr = AnoSegDFR(cfg)
         if cfg.mode == "train":
             dfr.train()
-        else:
+        elif cfg.mode == "evaluation":
             dfr.metrics_evaluation()
-    #         dfr.metrics_detecion()
+    #         dfr.metrics_detection()
+        else:
+            dfr.segmentation_evaluation()
