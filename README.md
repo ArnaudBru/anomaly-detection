@@ -7,3 +7,6 @@ There are now a large number of deep learning methods for anomaly detection and 
 
 We have chosen to implement 5 different algorithms in order to compare the results on two datasets: mvtec and gdxray:
 
+## MVTec results:
+
+![mvtec](https://github.com/ArnaudBru/anomaly-detection/blob/main/img/mvtec_results.png)
