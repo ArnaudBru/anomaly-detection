@@ -9,8 +9,8 @@ We have chosen to implement 5 different algorithms in order to compare the resul
 
 ## SPADE:  
 
-Paper:
-Code:
+Paper: <br>
+Code: <br>
 
 ## PaDIM:  
 
@@ -21,18 +21,18 @@ For refactoring code (on mvtec and gdxray+) please report you to the PADIM folde
 
 ## RIAD:
 
-Paper:
-Code:
+Paper: <br>
+Code:  <br>
 
 ## DFR:
 
-Paper:
-Code:
+Paper:  <br>
+Code:   <br>
 
 ## Patch_SVDD:
 
-Paper:
-Code:
+Paper:  <br>
+Code:   <br>
 
 ## MVTec results:
 
