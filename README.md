@@ -9,19 +9,30 @@ We have chosen to implement 5 different algorithms in order to compare the resul
 
 ## SPADE:  
 
+Paper:
+Code:
 
 ## PaDIM:  
 
-Papers :  [PaDiM: a Patch Distribution Modeling Framework for Anomaly Detection and Localization](https://arxiv.org/pdf/2011.08785.pdf). <br>
+Paper :  [PaDiM: a Patch Distribution Modeling Framework for Anomaly Detection and Localization](https://arxiv.org/pdf/2011.08785.pdf). <br>
 Code : [Implementation pytorch](https://github.com/xiahaifeng1995/PaDiM-Anomaly-Detection-Localization-master). 
 
 For refactoring code (on mvtec and gdxray+) please report you to the PADIM folder in this repository
 
 ## RIAD:
 
+Paper:
+Code:
+
 ## DFR:
 
+Paper:
+Code:
+
 ## Patch_SVDD:
+
+Paper:
+Code:
 
 ## MVTec results:
 
