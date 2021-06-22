@@ -7,6 +7,22 @@ There are now a large number of deep learning methods for anomaly detection and 
 
 We have chosen to implement 5 different algorithms in order to compare the results on two datasets: mvtec and gdxray:
 
+# SPADE:
+
+
+# PaDIM:
+
+Papers :  [PaDiM: a Patch Distribution Modeling Framework for Anomaly Detection and Localization](https://arxiv.org/pdf/2011.08785.pdf)
+Code : [Implementation pytorch](https://github.com/xiahaifeng1995/PaDiM-Anomaly-Detection-Localization-master)
+
+For refactoring code (on mvtec and gdxray+) please report you to the PADIM folder in this repository
+
+
 ## MVTec results:
 
 ![mvtec](https://github.com/ArnaudBru/anomaly-detection/blob/main/img/mvtec_results.png)
+
+## GDXRay+ results : 
+
+![gdxray](https://github.com/ArnaudBru/anomaly-detection/blob/main/img/gdxray_results.png)
+
