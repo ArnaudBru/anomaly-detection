@@ -9,30 +9,29 @@ We have chosen to implement 5 different algorithms in order to compare the resul
 
 ## SPADE:  
 
-Paper: <br>
-Code: <br>
+Paper: [Sub-Image Anomaly Detection with DeepPyramid Correspondences](https://arxiv.org/pdf/2005.02357v3.pdf)<br>
+Official Code: [Pytorch Implementation](https://github.com/byungjae89/SPADE-pytorch)<br>
 
 ## PaDIM:  
 
-Paper :  [PaDiM: a Patch Distribution Modeling Framework for Anomaly Detection and Localization](https://arxiv.org/pdf/2011.08785.pdf). <br>
-Code : [Implementation pytorch](https://github.com/xiahaifeng1995/PaDiM-Anomaly-Detection-Localization-master). 
+Paper: [PaDiM: a Patch Distribution Modeling Framework for Anomaly Detection and Localization](https://arxiv.org/pdf/2011.08785.pdf) <br>
+Official Code : [Pytorch Implementation](https://github.com/xiahaifeng1995/PaDiM-Anomaly-Detection-Localization-master)
 
 For refactoring code (on mvtec and gdxray+) please report you to the PADIM folder in this repository
 
 ## RIAD:
 
-Paper: <br>
-Code:  <br>
+Paper: [Reconstruction by inpainting for visual anomaly detection](https://www.researchgate.net/publication/346265233_Reconstruction_by_inpainting_for_visual_anomaly_detection)<br>
 
 ## DFR:
 
-Paper:  <br>
-Code:   <br>
+Paper: [DFR: Deep Feature Reconstruction forUnsupervised Anomaly Segmentation](https://arxiv.org/pdf/2012.07122v1.pdf)<br>
+Official Code: [Pytorch Implmentation](https://github.com/YoungGod/DFR)<br>
 
 ## Patch_SVDD:
 
-Paper:  <br>
-Code:   <br>
+Paper: [Patch SVDD: Patch-level SVDDfor Anomaly Detection and Segmentation](https://arxiv.org/pdf/2006.16067v2.pdf)<br>
+Official Code: [Pytorch Implementation](https://github.com/nuclearboy95/Anomaly-Detection-PatchSVDD-PyTorch)<br>
 
 ## MVTec results:
 
